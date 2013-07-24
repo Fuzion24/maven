@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.hexx</groupId>
+    <artifactId>sbt-github-repo</artifactId>
+    <packaging>jar</packaging>
+    <description>sbt-github-repo</description>
+    <version>0.1.0</version>
+    <name>sbt-github-repo</name>
+    <organization>
+        <name>com.github.hexx</name>
+    </organization>
+    <properties>
+        <sbtVersion>0.12</sbtVersion>
+        <scalaVersion>2.9.2</scalaVersion>
+        <extraDependencyAttributes xml:space="preserve">+e:scalaVersion:#@#:+2.9.2:#@#:+revision:#@#:+0.6.3:#@#:+module:#@#:+sbt-git:#@#:+e:sbtVersion:#@#:+0.12:#@#:+organisation:#@#:+com.typesafe.sbt:#@#:+branch:#@#:+@#:NULL:#@:#@#:</extraDependencyAttributes>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-sbt</groupId>
+            <artifactId>sbt</artifactId>
+            <version>0.12.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.9.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.sbt</groupId>
+            <artifactId>sbt-git</artifactId>
+            <version>0.6.3</version>
+        </dependency>
+    </dependencies>
+    <repositories>
+        <repository>
+            <id>fuzion24releases</id>
+            <name>fuzion24 releases</name>
+            <url>http://fuzion24.github.io/maven/releases/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+</project>
